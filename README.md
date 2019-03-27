@@ -168,7 +168,19 @@ Because the code has make this setting between <style> tags:
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
+This line defines a regular expression, helping with specifying what kind of result should be accepted as a right 'answer'. If the input is in such format, 'Nice!' will be shown. If the input is not in this format, 'Not valid!' will be shown. /^[a-zA-Z]+$/ approximately means a word with one or more characters from a-z or A-Z.
+
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+The general format of if-else conditional statements in Javascript is as the following:
+```js
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else { 
+  //  block of code to be executed if the condition is false
+}
+```
+Generally, the syntax in Javascript and in Python are very similar. One main difference is that in Javascript, the conditions should be included by the parenthesis and the block of code to be executed should be included by the brace; in Python, we do not use parenthesis for conditions and use colon to indicate the code to be executed. Another difference is that in Python, we need to indent the code to be executed and leaving 'if' and 'else' unindented. In Javascript, we just leave 'if' and 'else' out of the brace.
+
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
