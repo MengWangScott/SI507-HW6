@@ -98,7 +98,7 @@ alert(new Date())
 ```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-Just replace 'A name' with my own name in the function displayInformation() the heading is defined.
+Just replace 'A name' with my own name in the function displayInformation() where the heading is defined.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
@@ -108,7 +108,7 @@ Just replace 'A name' with my own name in the function displayInformation() the 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
- Set the HTML content of the first element with id="items' in the document to the length of list containing the elements  with the specified tag name 'li'. 
+ Set the HTML content of the first element with id="items' in the document to the length of a list containing the elements  with the specified tag name 'li'. 
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -116,7 +116,7 @@ White.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-This is because this code is displayed between \<p> tags where \<p> tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
+This is because this part of code is displayed between \<p> tags where \<p> tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
 ```js
 <style> p{} 
 ```
@@ -152,6 +152,19 @@ The function handleClick() is defined with alert("hello"), where alert() is the 
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+
+Because the code has make this setting between <style> tags:
+```js
+<style type="text/css">
+    .error{
+        color: red;      //Errors are in red
+    }
+    .good {
+        color: blue;    //Valid inputs are in blue
+    }
+</style>
+```
+
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
