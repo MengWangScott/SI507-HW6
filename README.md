@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,7 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
+* Like this:
 * **Meng Wang (mwscott)**
 * Jackie Cohen (jczetta)
 * Yea-Ree Chang (cyearee)
@@ -104,11 +104,11 @@ Just replace 'A name' with my own name in the function displayInformation() wher
 
 'document' represent the 'document object'. When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document. (cite from: https://www.w3schools.com/jsref/dom_obj_document.asp)
 
-* **What is happening in line 12 ( 
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
- Set the HTML content of the first element with id="items' in the document to the length of a list containing the elements  with the specified tag name 'li'. 
+ Set the HTML content of the first element with id="items' in the document to the length of a list containing the elements  with the specified tag name 'li'.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -116,9 +116,9 @@ White.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-This is because this part of code is displayed between \<p> tags where \<p> tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
+This is because this part of code is displayed between \<p> tags where \<p> tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of
 ```js
-<style> p{} 
+<style> p{}
 ```
 to make those boxes some shade of blue, I would use:
 ```js
@@ -171,11 +171,12 @@ Because the code has make this setting between <style> tags:
 This line defines a regular expression, helping with specifying what kind of result should be accepted as a right 'answer'. If the input is in such format, 'Nice!' will be shown. If the input is not in this format, 'Not valid!' will be shown. /^[a-zA-Z]+$/ approximately means a word with one or more characters from a-z or A-Z.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+
 The general format of if-else conditional statements in Javascript is as the following:
 ```js
 if (condition) {
   //  block of code to be executed if the condition is true
-} else { 
+} else {
   //  block of code to be executed if the condition is false
 }
 ```
@@ -184,13 +185,15 @@ Generally, the syntax in Javascript and in Python are very similar. One main dif
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
+'10000' refers to the speed of the fading effect in milliseconds.
+
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
 ```js
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+The first line involving a ready() method, which makes the function() available after the (document) is loaded. function() specifies the function to run after the document is loaded. The second line involves an Event method which triggers or attaches a function to an event handler for the selected elements. In this case, the submit event has been attached. (cite from: https://www.w3schools.com/jquery/event_ready.asp and https://www.w3schools.com/jquery/jquery_ref_events.asp)
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
