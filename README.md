@@ -58,7 +58,8 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this: 
-* **Jackie Cohen (jczetta)**
+* **Meng Wang (mwscott)**
+* Jackie Cohen (jczetta)
 * Yea-Ree Chang (cyearee)
 * Ruchi Ookalkar (ruchido)
 * Innocent Obi (innoobi)
@@ -79,13 +80,25 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+The comment in JavaScript looks different from normal code. If we look at the code in Chrome, the comments are green and italic. We have to put two // before a comment.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
+Basically, we just need to use a web browser to open the ".html" file that contains the JavaScript program. Of course, there are different ways to do that, either open it directly, or like what we did before --- use a Flask application to render the ".html" file as a template and go to the route related to this ".html" file.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
+The first one is alert(), the second one is console.log(). Things in alert() function can be shown in the web page to the user. Things in console.log()  can only be shown in the console. If we want to show/'print' something to users, we need to use alert(). If we want to show something in the console (may just for programmers), we just use console.log().
+
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+alert("hello") needs to be comment out. We just add code:
+```js
+alert(new Date())
+```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+
+
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
