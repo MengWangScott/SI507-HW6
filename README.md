@@ -116,7 +116,7 @@ White.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-This is because this code is displayed between <p> tags where <p> tag defines a paragraph and the style of these paragraphs have been set with border and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
+This is because this code is displayed between '<p>' tags where '<p>' tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
 ```js
 <style> p{} 
 ```
