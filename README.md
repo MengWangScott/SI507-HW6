@@ -102,7 +102,7 @@ Just replace 'A name' with my own name in the function displayInformation() the 
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-'document' represent the 'document object'. When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document. (https://www.w3schools.com/jsref/dom_obj_document.asp)
+'document' represent the 'document object'. When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document. (cite from: https://www.w3schools.com/jsref/dom_obj_document.asp)
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
@@ -116,12 +116,18 @@ White.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-This is because this code is displayed between \<p>\ tags where \<p>\ tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
+This is because this code is displayed between \<p> tags where \<p> tag defines a paragraph and the style of these paragraphs have been set with borders and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
 ```js
 <style> p{} 
 ```
+to make those boxes some shade of blue, I would use:
+```js
+background-color: #3399ff
+```
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+I define a new function called copyFunction2() which set the first element with id="Canada" to a text "O Canada". Then I call this function on McGill University and display the text at the bottom. I figure out what to do by referring to the original copyFunction() in the code and the texts shown when copy 'University of Michigan'.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -135,8 +141,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-
-
+The function handleClick() is defined with alert("hello"), where alert() is the function that call the text box to show up. At the bottom, there is a button input that call the handleClick() function. So once users click on the button, the handleClick() function would be called and the alert() function in handleClick() would also be called.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
