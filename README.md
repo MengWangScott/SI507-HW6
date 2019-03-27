@@ -88,7 +88,7 @@ Basically, we just need to use a web browser to open the ".html" file that conta
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-The first one is alert(), the second one is console.log(). Things in alert() function can be shown in the web page to the user. Things in console.log()  can only be shown in the console. If we want to show/'print' something to users, we need to use alert(). If we want to show something in the console (may just for programmers), we just use console.log().
+The first one is alert(), the second one is console.log(). Things in alert() function can be shown in the web page to the user. Things in console.log()  can only be shown in the console. If we want to show something to users, we need to use alert(). If we want to show something in the console (may just for programmers), we just use console.log().
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
@@ -98,17 +98,28 @@ alert(new Date())
 ```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-
+Just replace 'A name' with my own name in the function displayInformation() the heading is defined.
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
+'document' represent the 'document object'. When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document. (https://www.w3schools.com/jsref/dom_obj_document.asp)
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+ Set the HTML content of the first element with id="items' in the document to the length of list containing the elements  with the specified tag name 'li'. 
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
+White.
+
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
+This is because this code is displayed between <p> tags where <p> tag defines a paragraph and the style of these paragraphs have been set with border and different background color in <style> tags. To make them a different color, we just change the  **background-color** attribute in the brace of 
+```js
+<style> p{} 
+```
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
